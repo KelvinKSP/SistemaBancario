@@ -10,7 +10,7 @@ public class Funcionario {
 	
 	//------- Get e Set ----------
 	public double getSalario() {
-		return salario + (salario * 0.10);
+		return salario;
 	}
 
 	public void setSalario(double salario) {
