@@ -17,6 +17,10 @@ public class Principal {
 		operador.setSalario(1500);
 		gerente.setSalario(1500);
 		
+		
+		//Atualização
+		System.out.println("------------------------------------");
+		
 		System.out.println("O salário do operador com bonificação = " + operador.getSalario() 
 			+ "\nO salário do gerente com bonificação = " + gerente.getSalario(gerente));
 		
