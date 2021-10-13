@@ -21,7 +21,8 @@ public class Principal {
 		Gerente gerente = new Gerente();
 		
 		operador.setSalario(1000);
-		gerente.setSalario(3000);
+		//alteração no valor do setSalario
+		gerente.setSalario(2500);
 		
 		
 		System.out.println("---------------- BANCO CH ----------------------");
