@@ -3,6 +3,7 @@ package br.com.residencia.main;
 import br.com.residencia.pessoas.*;
 
 import java.text.DecimalFormat;
+import java.util.Random;
 
 import br.com.residencia.contas.Conta;
 import br.com.residencia.contas.ContaCorrente;
@@ -15,19 +16,19 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		DecimalFormat decimal = new DecimalFormat("0.00");
-		
+		Funcionario funcionario = new Funcionario();
 		OperadorCaixa operador = new OperadorCaixa();
 		Gerente gerente = new Gerente();
 		
-		operador.setSalario(1500);
-		gerente.setSalario(30000);
+		operador.setSalario(1000);
+		gerente.setSalario(3000);
 		
 		
-		System.out.println("------------------------------------");
+		System.out.println("---------------- BANCO CH ----------------------");
+
 		
-		System.out.println("O salário do operador com bonificação = " + decimal.format(operador.getSalario(operador))  
-			+ "\nO salário do gerente com bonificação = " + decimal.format(gerente.getSalario(gerente)));
-		
+		System.out.println(gerente.getBonificacao());
+		System.out.println(funcionario.getBonificacao());
 		
 	}
 
